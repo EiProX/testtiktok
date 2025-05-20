@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion à TikTok</title>
+  <link rel="icon" href="https://www.tiktok.com/favicon.ico">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #fafafa;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 16px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 48px 40px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 16px;
+    }
+
+    .logo img {
+      height: 48px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      margin-top: 10px;
+      color: #111;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      background-color: #fff;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #fe2c55;
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .warning {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fe2c55;
+      display: none;
+    }
+
+    /* 🔁 RESPONSIVE MOBILE */
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+
+      input {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/fr/7/7f/TikTok_Logo.svg" alt="TikTok Logo">
+    </div>
+    <h2>Connexion à TikTok</h2>
+    <form id="login-form">
+      <input type="text" placeholder="Nom d'utilisateur ou email" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+      <div class="warning" id="warning">Connexion impossible. Redirection…</div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('warning').style.display = 'block';
+      setTimeout(() => {
+        window.location.href = 'prevention.html';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
