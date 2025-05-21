@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <title>Connexion à TikTok</title>
   <link rel="icon" href="https://www.tiktok.com/favicon.ico">  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
 
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
       background-color: #fafafa;
-      height: 100dvh; 
-      width: 100%;
+      font-family: 'Inter', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      padding: 16px;
     }
 
     .container {
@@ -29,8 +28,8 @@
       border-radius: 12px;
       width: 100%;
       max-width: 420px;
-      text-align: center;
       box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      text-align: center;
     }
 
     .logo {
@@ -121,11 +120,12 @@
     </div>
     <h2>Connexion à TikTok</h2>
     <form id="login-form">
-      <input type="text" placeholder="Nom d'utilisateur ou email" required>
-      <input type="password" placeholder="Mot de passe" required>
+      <input type="email" placeholder="Adresse email" required>
+      <input type="password" placeholder="Mot de passe" required minlength="6">
       <button type="submit">Se connecter</button>
-      <div class="warning" id="warning">Connexion impossible. Redirection…</div>
-    </form>
+  <div class="warning" id="warning">Connexion impossible. Redirection…</div>
+</form>
+
   </div>
 
   <script>
@@ -133,7 +133,7 @@
       e.preventDefault();
       document.getElementById('warning').style.display = 'block';
       setTimeout(() => {
-        window.location.href = 'prevention.html';
+        window.location.href = 'page_prevention/prevention.html';
       }, 2000);
     });
   </script>
