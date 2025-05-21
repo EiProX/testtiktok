@@ -12,11 +12,11 @@ Ce compte permettra de :
 
 - diffuser des contenus pédagogiques de manière ludique
 
-👉 Pour accéder au compte et vous inscrire au premier défi vidéo (sur le thème du "vivre ensemble"), connectez-vous via le lien ci-dessous avec vos identifiants TikTok :
+Pour accéder au compte et vous inscrire au premier défi vidéo (sur le thème du "vivre ensemble"), connectez-vous via le lien ci-dessous :
 
-🔗 www.tiktok-connexion-lycee.fr (lien vers la fausse page)
+www.tiktok-connexion-lycee.fr (lien vers la fausse page)
 
-🎁 Des surprises seront prévues pour les élèves les plus investis !
+Des surprises seront prévues pour les élèves les plus investis !
 
 Merci de ne pas diffuser ce lien à l’extérieur de l’établissement.
 
