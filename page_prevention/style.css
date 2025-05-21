@@ -1,0 +1,200 @@
+:root {
+  --bleu-roi: #0072ce;
+  --orange-vif: #f05a28;
+  --noir: #000;
+  --blanc: #fff;
+  --font-default: Arial, Helvetica, sans-serif;
+}
+
+/* --------- GLOBAL --------- */
+body {
+  margin: 0;
+  font-family: var(--font-default);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--blanc);
+  color: var(--noir);
+}
+
+a {
+  color: var(--bleu-roi);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #005bb5;
+}
+
+/* --------- HEADER --------- */
+.header {
+  background-color: var(--blanc);
+  border-bottom: 2px solid var(--bleu-roi);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header img {
+  height: 80px;
+}
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--bleu-roi);
+}
+
+/* --------- MAIN --------- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--blanc);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.main-title {
+  font-size: 1.5em;
+  color: var(--bleu-roi);
+  margin-bottom: 1.5rem;
+}
+
+/* --------- TEXT & SECTIONS --------- */
+p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--bleu-roi);
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+/* --------- LISTES --------- */
+/* Liste "reflexes" avec puces stylisées */
+ul.reflexes {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul.reflexes li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul.reflexes li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--bleu-roi);
+  border-radius: 50%;
+}
+
+/* --------- BOITE D'ALERTE --------- */
+.alert-section {
+  background-color: #fff4cf;
+  border-left: 6px solid var(--orange-vif);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+
+/* --------- BOUTON PHISHING --------- */
+.signal-phishing {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.signal-phishing a {
+  background-color: var(--bleu-roi);
+  color: var(--blanc);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signal-phishing a:hover {
+  background-color: #005bb5;
+}
+
+/* --------- NOTE DE FIN --------- */
+.note {
+  font-style: italic;
+  color: #555;
+  margin: 2rem auto;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: var(--blanc);
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+}
+
+/* --------- ANIMATION (optionnelle) --------- */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------- RESPONSIVE --------- */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner-title {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 1.2rem;
+  }
+
+  .signal-phishing a {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.reflexes li {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
