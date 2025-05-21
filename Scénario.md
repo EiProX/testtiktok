@@ -14,7 +14,7 @@ Ce compte permettra de :
 
 👉 Pour accéder au compte et vous inscrire au premier défi vidéo (sur le thème du "vivre ensemble"), connectez-vous via le lien ci-dessous avec vos identifiants TikTok :
 
-🔗 www.tiktok-connexion-lycee.fr (lien vers ta fausse page)
+🔗 www.tiktok-connexion-lycee.fr (lien vers la fausse page)
 
 🎁 Des surprises seront prévues pour les élèves les plus investis !
 
